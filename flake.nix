@@ -18,8 +18,8 @@
 
           installPhase = ''
             mkdir -p $out/bin
-            find . -type f -name "*.sh" -exec cp {} $out/bin
-            find $out/bin -type f -exec chmod +x {}
+            find . -type f -name "*.sh" -exec cp {} $out/bin \;
+            find $out/bin -type f -exec chmod +x {} \;
           '';
         };
       };
