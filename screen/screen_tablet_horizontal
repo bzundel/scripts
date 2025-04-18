@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+xrandr -o 3
+xinput set-prop 14 --type=float "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1
