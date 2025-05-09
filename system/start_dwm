@@ -1,0 +1,14 @@
+#!/bin/sh
+
+dunst &
+flameshot &
+nm-applet &
+redshift-gtk &
+caffeine &
+slstatus &
+sxhkd &
+picom &
+
+feh --bg-scale /usr/share/backgrounds/wallpaper.png
+
+exec dwm
