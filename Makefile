@@ -1,5 +1,8 @@
 BIN_DIR ?= /usr/local/bin
 
 install:
-	find . -type f ! -path './.git/*' ! -name 'Makefile' -exec cp {} $(BIN_DIR) \; -exec chmod +x $(BIN_DIR) \;
+	for f in $$(find . -type f ! -path './.git/*' ! -name 'Makefile'); do \
+		cp "$$f" $(BIN_DIR)/$$(basename "$$f"); \
+		chmod +x $(BIN_DIR)/$$(basename "$$f"); \
+	done
 
