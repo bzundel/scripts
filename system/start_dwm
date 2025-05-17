@@ -8,7 +8,9 @@ caffeine &
 slstatus &
 sxhkd &
 picom &
+oneko &
 
+autorandr -c
 feh --bg-scale /usr/share/backgrounds/wallpaper.png
 
 exec dwm
