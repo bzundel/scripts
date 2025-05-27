@@ -9,6 +9,7 @@ slstatus &
 sxhkd &
 picom &
 oneko &
+protonmail-bridge --no-window &
 
 autorandr -c
 feh --bg-scale /usr/share/backgrounds/wallpaper.png
