@@ -8,10 +8,9 @@ caffeine &
 slstatus &
 sxhkd &
 picom &
-oneko &
 protonmail-bridge --no-window &
 
 autorandr -c
-feh --bg-scale /usr/share/backgrounds/wallpaper.png
+feh --bg-fill /usr/share/backgrounds/wallpaper.png
 
 exec dwm
