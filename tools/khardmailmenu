@@ -3,5 +3,5 @@
 set -e
 
 target_contact=$(khard list -F name | tail -n +3 | dmenu -i -l 5 | sed 's/ (Nickname: [^)]*)//')
-selected_email=$(khard list -F email $target_contact | tail -n +3 | awk '{print $(NF)}' | dmenu -i -l 5)
+selected_email=$(khard email -p $target_contact | tail -n +2 | awk '{print $1}' | dmenu -i -l 5)
 echo -n $selected_email | xclip -selection clipboard
