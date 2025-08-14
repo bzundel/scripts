@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -e
+
+selected_profile=$(autorandr --list | dmenu -i -l 5)
+autorandr -c $selected_profile
+feh --bg-fill /usr/share/backgrounds/wallpaper.png
