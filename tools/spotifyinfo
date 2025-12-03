@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+status=$(playerctl -p spotify status)
+
+if [ $status == "Playing" ]; then
+	title=$(playerctl -p spotify metadata title)
+	artist=$(playerctl -p spotify metadata artist)
+
+	echo "$title - $artist"
+else
+	echo "-"
+fi
